@@ -1,0 +1,33 @@
+ul.pagination {
+    padding: 40px 0 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+
+    li {
+        color: rgb(255, 255, 255);
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    li.active {
+        background-color: #4CAF50;
+        color: white;
+        border: 1px solid #4CAF50;
+    }
+
+    li:hover:not(.active) {
+        background-color: rgb(111, 63, 244);
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    ul.pagination {
+        width: 100vw;
+    }
+
+}

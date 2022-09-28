@@ -1,0 +1,154 @@
+.intro {
+    width: 100vw;
+    overflow: hidden;
+    display: block;
+    height: 100vh;
+    margin-top: 8.2vh;
+
+    video {
+        width: 100%;
+        position: relative;
+        // filter: brightness(0.7);
+        height: max-content;
+
+
+
+    }
+
+    .description {
+        position: absolute;
+        z-index: 5;
+        top: 30vh;
+        width: 70vw;
+        transform: translateX(-50%);
+        left: 50vw;
+        margin: auto;
+        color: aliceblue;
+
+        p.title-video {
+            color: rgb(255 128 64);
+            font-size: 2rem;
+            font-weight: 500;
+            padding: 0 0 20px 0;
+            animation: DownAnimation 1s ease-out;
+        }
+
+        p.sub-title_video {
+            font-size: 20px;
+            animation: LeftAnimation 1s ease-out;
+            padding: 5px 0;
+        }
+
+        button.btn-play-small {
+            animation: UpAnimation 1s ease-out;
+            color: rgb(254 187 0);
+            min-width: 170px;
+            padding: 0 0 0 20px;
+            border: 2px solid rgb(254 187 0);
+            border-radius: 5px;
+            background-image: url("https://phimbo.me/styles/images/icon-play-small.png");
+            background-position: 23px 10px;
+            background-repeat: no-repeat;
+            line-height: 38px;
+            display: inline-block;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 700;
+            background-color: rgb(0 0 0 / 0%);
+            box-shadow: 0 4px 15px rgb(0 0 0 / 50%);
+            text-shadow: 0 4px 15px rgb(0 0 0 / 50%);
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        button.btn-play-small.volume {
+            background-image: none;
+            margin-left: 10px;
+        }
+
+        button.btn-play-small:hover {
+            box-shadow: none;
+            opacity: 0.6;
+            background-color: rgba($color: #ffffff, $alpha: 0.5);
+        }
+
+        p.des-video {
+            font-size: 16px;
+            width: 400px;
+            animation: LeftAnimation 1s ease-out;
+        }
+    }
+
+
+}
+
+
+@keyframes DownAnimation {
+    from {
+        transform: translateY(-300%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+@keyframes LeftAnimation {
+    from {
+        transform: translateX(-300%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes UpAnimation {
+    from {
+        transform: translateY(300%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+@media screen and (max-width:1024px) {
+    .intro {
+        height: max-content;
+
+        .description {
+            position: unset;
+            z-index: 5;
+            top: 30vh;
+            width: 90vw;
+            transform: translateX(0%);
+            left: 0;
+            margin: 20px auto;
+            color: rgb(240 248 255);
+
+            button.btn-play-small.volume {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+            p.des-video {
+                width: auto;
+            }
+        }
+    }
+
+}

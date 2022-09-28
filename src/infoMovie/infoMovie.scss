@@ -1,0 +1,25 @@
+.infoMovie {
+    color: rgb(255, 255, 255);
+    padding: 0 10px;
+
+    p {
+        line-height: 30px;
+    }
+
+    .value-film {
+        color: yellow;
+        padding: 0 2px;
+
+        .list-produce {
+            padding: 2px;
+            margin: 0 3px;
+            border: 1px solid yellow;
+            background-color: transparent;
+        }
+
+        .list-produce:hover {
+            background-color: yellow;
+            color: blue;
+        }
+    }
+}

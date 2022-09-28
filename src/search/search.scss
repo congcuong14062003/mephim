@@ -1,0 +1,62 @@
+h3.note {
+    font-size: 13px;
+    margin-top: 80px;
+    text-align: center;
+    color: rgb(218, 203, 70);
+    text-shadow: 1px 1px 1px #1a1a1a;
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 5px 21px;
+    width: auto;
+}
+
+ul.list-film-search {
+    width: 1024px;
+    margin: auto;
+    min-height: 44.33vh;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    padding: 30px 10px;
+    background: rgb(79 78 82) url("https://2phimmoi.net/wp-content/themes/halimmovies/media/img/item_bgg.gif") repeat;
+
+    h3 {
+        color: rgb(218, 203, 70);
+        text-shadow: 1px 1px 1px #1a1a1a;
+        display: inline-block;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 5px 21px;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    li {
+        width: 25%;
+        padding: 20px 10px;
+    }
+}
+
+
+@media screen and (min-width: 401px) and (max-width:1024px) {
+    
+    ul.list-film-search {
+        width: 100vw;
+        li {
+            width: 50%;
+            padding: 20px 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    ul.list-film-search {
+        width: 100vw;
+        li {
+            width: 100%;
+            padding: 20px 10px;
+        }
+    }
+}

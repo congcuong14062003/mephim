@@ -1,0 +1,35 @@
+@media screen and (min-width: 401px) and (max-width:1024px) {
+
+    .list-film-container.genres {
+       padding: 0;
+       width: 100vw;
+        ul.list-new-film {
+            width: 100%;
+            li {
+                width: 50%;
+                .type-film {
+                    left: 10px;
+                    top: 5px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .list-film-container.genres {
+       padding: 0;
+       width: 100vw;
+        ul.list-new-film {
+            width: 100%;
+            li {
+                width: 100%;
+                .type-film {
+                    left: 10px;
+                    top: 5px;
+                }
+            }
+        }
+    }
+}

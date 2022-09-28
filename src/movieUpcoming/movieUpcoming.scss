@@ -1,0 +1,42 @@
+
+ h3.title {
+     color: rgb(218 203 70);
+     display: inline-block;
+     font-size: 25px;
+     text-transform: uppercase;
+     padding: 5px 0;
+     background: url("https://2phimmoi.net/wp-content/themes/halimmovies/media/img/divider_lines.gif") bottom repeat-x;
+     margin-bottom: 10px;
+     margin-top: 40px;
+     width: 100%;
+ }
+
+ .list-film-container {
+     border-radius: 10px;
+     padding: 30px 10px;
+
+     background: url("https://2phimmoi.net/wp-content/themes/halimmovies/media/img/body_bg.gif") rgb(175, 173, 178);
+
+
+     .slick-slider:hover {
+
+         .slick-prev:before,
+         .slick-next:before {
+             opacity: 1;
+         }
+     }
+
+     .slick-slider {
+
+         .slick-prev:before,
+         .slick-next:before {
+             font-family: 'slick';
+             font-size: 34px;
+             line-height: 0;
+             color: rgb(255 255 255);
+             margin-left: -7px;
+             opacity: 0;
+             transition: all .3s ease;
+         }
+     }
+ }

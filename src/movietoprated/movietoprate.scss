@@ -1,0 +1,84 @@
+ h3.title {
+     color: rgb(218 203 70);
+     text-shadow: 1px 1px 1px #1a1a1a;
+     display: inline-block;
+     font-size: 25px;
+     text-transform: uppercase;
+     padding: 5px 0;
+     background: url("https://2phimmoi.net/wp-content/themes/halimmovies/media/img/divider_lines.gif") bottom repeat-x;
+     margin-bottom: 10px;
+     margin-top: 40px;
+     width: auto;
+
+ }
+
+ .list-film-container {
+     border-radius: 10px;
+     padding: 30px 10px;
+     background: rgb(79 78 82) url("https://2phimmoi.net/wp-content/themes/halimmovies/media/img/item_bgg.gif") repeat;
+
+     ul.list-new-film {
+         display: flex;
+         flex-wrap: wrap;
+
+         li {
+             width: 20%;
+             padding: 20px 10px;
+
+             .type-film {
+                 left: 10px;
+                 top: 5px;
+             }
+
+             .type-film:after {
+                 top: 2px;
+                 right: -12px;
+                 width: 0;
+                 height: 0;
+                 border-color: rgb(0 0 0 / 0%) rgb(0 0 0 / 0%) rgb(0 0 0 / 0%) rgb(162 29 10);
+                 border-style: solid;
+                 border-width: 11px 0 12px 12px;
+             }
+
+             .des-film {
+                 transition: all 1s ease;
+                 transform: translateY(0%);
+                 opacity: 1;
+             }
+         }
+     }
+ }
+
+
+ @media screen and (min-width: 401px) and (max-width:1024px) {
+
+     .list-film-container {
+        padding: 0;
+         ul.list-new-film {
+             li {
+                 width: 50%;
+                 .type-film {
+                     left: 10px;
+                     top: 5px;
+                 }
+             }
+         }
+     }
+ }
+
+ @media screen  and (max-width:400px) {
+
+    .list-film-container {
+        padding: 0;
+        ul.list-new-film {
+            li {
+                width: 100%;
+                .type-film {
+                    left: 10px;
+                    top: 5px;
+                }
+            }
+        }
+    }
+}
+
